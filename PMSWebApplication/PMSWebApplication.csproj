@@ -188,6 +188,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\TasksController.cs" />
     <Compile Include="Controllers\UpdatesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -220,6 +221,34 @@
     <Compile Include="Migrations\202102280056403_changeProjectIdDataType.cs" />
     <Compile Include="Migrations\202102280056403_changeProjectIdDataType.Designer.cs">
       <DependentUpon>202102280056403_changeProjectIdDataType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104061821170_ChangedTaskModel.cs" />
+    <Compile Include="Migrations\202104061821170_ChangedTaskModel.Designer.cs">
+      <DependentUpon>202104061821170_ChangedTaskModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104061947482_RemovedTaskwisePayemnt.cs" />
+    <Compile Include="Migrations\202104061947482_RemovedTaskwisePayemnt.Designer.cs">
+      <DependentUpon>202104061947482_RemovedTaskwisePayemnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104071918329_Task_DataType.cs" />
+    <Compile Include="Migrations\202104071918329_Task_DataType.Designer.cs">
+      <DependentUpon>202104071918329_Task_DataType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104080459094_Changed_Updates.cs" />
+    <Compile Include="Migrations\202104080459094_Changed_Updates.Designer.cs">
+      <DependentUpon>202104080459094_Changed_Updates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104080516387_changedUpdate_DisplayName.cs" />
+    <Compile Include="Migrations\202104080516387_changedUpdate_DisplayName.Designer.cs">
+      <DependentUpon>202104080516387_changedUpdate_DisplayName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104090834012_ChangedTask.cs" />
+    <Compile Include="Migrations\202104090834012_ChangedTask.Designer.cs">
+      <DependentUpon>202104090834012_ChangedTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104100740110_AddedNewAttributesToTask.cs" />
+    <Compile Include="Migrations\202104100740110_AddedNewAttributesToTask.Designer.cs">
+      <DependentUpon>202104100740110_AddedNewAttributesToTask.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -315,6 +344,11 @@
     <Content Include="Views\Attachments\Edit.cshtml" />
     <Content Include="Views\Attachments\Index.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Tasks\Create.cshtml" />
+    <Content Include="Views\Tasks\Delete.cshtml" />
+    <Content Include="Views\Tasks\Details.cshtml" />
+    <Content Include="Views\Tasks\Edit.cshtml" />
+    <Content Include="Views\Tasks\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -354,6 +388,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102280056403_changeProjectIdDataType.resx">
       <DependentUpon>202102280056403_changeProjectIdDataType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104061821170_ChangedTaskModel.resx">
+      <DependentUpon>202104061821170_ChangedTaskModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104061947482_RemovedTaskwisePayemnt.resx">
+      <DependentUpon>202104061947482_RemovedTaskwisePayemnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104071918329_Task_DataType.resx">
+      <DependentUpon>202104071918329_Task_DataType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104080459094_Changed_Updates.resx">
+      <DependentUpon>202104080459094_Changed_Updates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104080516387_changedUpdate_DisplayName.resx">
+      <DependentUpon>202104080516387_changedUpdate_DisplayName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104090834012_ChangedTask.resx">
+      <DependentUpon>202104090834012_ChangedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104100740110_AddedNewAttributesToTask.resx">
+      <DependentUpon>202104100740110_AddedNewAttributesToTask.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

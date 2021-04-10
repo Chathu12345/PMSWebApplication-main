@@ -7,9 +7,15 @@ namespace PMSWebApplication.Models.DomainModels
 {
     public class Update
     {
+        [Required]
         public int Id { get; set; }
+        [Required]
         public int ProjectId { get; set; }
+        [Required]
+        [Display(Name = "Description")]
+        public string Description { get; set; }
         public virtual Project Project { get; set; }
+        [Required]
         public string UserId { get; set; }
         public virtual ApplicationUser User { get; set; }
         public int AttachmentId { get; set; }
